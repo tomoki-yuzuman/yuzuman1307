@@ -1,0 +1,670 @@
+@charset "utf-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+body {
+  background-color: #fff;
+}
+.header {
+  display: flex;
+  align-items: center;
+  height: 260px;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.header .ddd {
+  width: 190px;
+  position: absolute;
+  left: 200px;
+}
+.header p {
+  position: relative;
+  left: 180px;
+  font-size: 60px;
+  margin-top: 0px;
+}
+.header p span {
+  font-size: 25px;
+  margin-left: 10px;
+}
+.header .cover {
+  position: absolute;
+  display: block;
+  right: 70px;
+}
+.header ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.header li {
+  list-style: none;
+  font-size: 17px;
+  cursor        : pointer;     /* カーソル   */
+} 
+.header li a {
+  text-decoration: none;
+  color: #24292e;
+}
+.header li img {
+  width: 20px;
+}
+.header li + li {
+  margin-left: 30px;
+}
+.main {
+  background-color: #ffffff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.inner {
+  width: 75%;
+  margin: 0 auto;
+}
+.sec01 {
+  /*background: url("images_work1/5170404_m.jpg") no-repeat center / cover;*/
+  height: 600px;
+}
+.sec01 ul {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+.sec01 li {
+  list-style: none;
+  width: calc(100% / 3);
+}
+.sec01 .li_1 img {
+  width: 100%;
+}
+.sec01 .li_2 img {
+  width: 100%;
+}
+.sec01 .li_3 img {
+  width: 100%;
+}
+/*.sec01::before{
+  background: url("images_work1/photo0000-0359.jpg") no-repeat center / cover;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  width: 50%;
+}*/
+.sec02 {
+  padding: 80px 0;
+  text-align: center;
+  background-color: #ffffff;
+  color: #4b4949;
+}
+.sec02 .inner {
+  margin-bottom: 100px;
+}
+.sec02 h2 {
+  font-size: 32px;
+  padding-top: 200px;
+  text-align: center;
+  letter-spacing: 0.7rem;
+}
+.sec02 p {
+  font-size: 24px;
+  letter-spacing: 0.09rem;
+  margin-top: 70px;
+  text-align: center;
+  line-height: 6rem;
+  padding: 0 4%;
+}
+.sec03 {
+  /*background-color: #d64e25;*/
+  background: url("https://github.com/tomoki-yuzuman/yuzuman1307/blob/main/IMG_2569.JPG?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 -170px ;
+  color: #ffffff;
+  padding: 30px 0;
+  text-align: center;
+  height: 730px;
+}
+.sec03 h2 {
+  font-size: 32px;
+  padding-top: 130px;
+  text-align: center;
+  letter-spacing: 0.7rem;
+  color: #d64e25;
+}
+.sec03 .btn {
+  display       : inline-block;
+  width: 26%;
+  border-radius : 18px;          
+  font-size     : 30px;
+  font-weight: normal;      /* 文字サイズ */
+  /*text-align    : center;      文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 16px 28px;   /* 余白       */
+  margin: 30% 0 60px 0;
+  background    : #d64e25;
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;
+  line-height: 2.5rem;
+} 
+.sec03 .btn span {
+  font-size: 20px;
+}
+.sec03 .btn + .btn {
+  margin-left: 100px;
+}
+.sec03 .btn a {
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 0.09rem;
+}
+.sec03 .btn:hover {
+  box-shadow: none;
+  background-color: rgba(226, 66, 55, 0.68);
+}
+.sec03 .btn a:hover {
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 3px;
+  letter-spacing: 0.09rem;
+}
+.sec04 {
+  background-color: #ffffff;
+  color: #4b4949;
+  padding: 30px 0;
+}
+.sec04 .inner {
+  width: 50%;
+  margin-bottom: 100px;
+}
+.sec04 h2 {
+  font-size: 32px;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  border-bottom:  solid 1px #4b4949;;
+  text-align: center;
+  letter-spacing: 0.7rem;
+}
+.sec04 p {
+  font-size: 22px;
+  letter-spacing: 0.08rem;
+  padding: 35px 0;
+  text-align: center;
+  border-bottom: solid 1px #4b4949;
+  text-align: left;
+}
+.sec04 p span {
+  padding-right: 46px;
+}
+.sec05 {
+  height: 400px;
+  padding: 30px 0 100px 0;
+  background-color: #ffffff;
+  color: #4b4949;
+}
+.sec05 h2 {
+  font-size: 32px;
+  padding:  30px 0 30px 0;
+  text-align: center;
+  letter-spacing: 0.7rem;
+}
+.sec05 .container {
+  height: 80%;
+  text-align: center;
+}
+.sec05 .container .ex{
+  width: 80%;
+  margin: 0 auto;
+}
+.sec05 .container .ex h2 {
+  font-size: 25px;
+  padding: 60px 0;
+}
+.sec05 .container .ex h2 img {
+  width: 70%; 
+}
+.sec05 .container .ex p {
+  padding: 5% 12%;
+  margin-bottom: 100px;
+  font-size: 20px;
+  line-height: 6rem;
+}
+.sec06 {
+  padding: 30px 0;
+  background-color: #ffffff;
+  color: #4b4949;
+}
+.sec06 p {
+  font-size: 22px;
+  margin: 70px 0 30px 0;
+  text-align: center;
+}
+.sec06 p span {
+  margin-right: 20px;
+}
+.sec06 p .s1 {
+  background: linear-gradient(transparent 80%, #f5a790 40%);
+  font-size: 30px;
+  font-weight: normal;
+  font-weight: 500;
+}
+.sec06 h2 {
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0.7rem;
+  padding: 50px 0 0 0;
+}
+.sec06 .container {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+}
+.sec06 .container .ex{
+  width: 230px;
+  height: 230px;
+  /*border: 1px solid #4b4949;*/
+  border-radius: 50%;
+  position: relative;
+}
+.sec06 .inner p {
+  font-size: 22px;
+  margin: 90px 0 50px 0;
+  text-align: center;
+}
+.sec06 .container .ex + .ex {
+  margin-left: 50px;
+}
+.sec06 .container .ex p {
+  font-size: 26px;
+  letter-spacing: 0.2rem;
+}
+.sec06 .container .ex .p {
+  font-size: 26px;
+  letter-spacing: 0.2rem;
+  margin-left: 40px;
+}
+.sec06 .container .ex .a1{ 
+  position: absolute;
+  left: calc(50% - 50px);
+}
+.sec06 .container .ex .a2{ 
+  position: absolute;
+  left: calc(50% - 25px);
+}
+.sec06 .container .ex .img1 {
+  width: 100px;
+}
+.sec06 .container .ex .img2 {
+  width: 100px;
+}
+.footer {
+  background-color: #d64e25;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0 ;
+  font-size: 14px;
+  font-weight: 300;
+}
+.sp_only {
+  display: none;
+}
+@media (max-width: 1318px) { 
+  .sec03 .btn {
+    margin-top: 26%;
+  }
+}
+@media (max-width: 1024px) { 
+  .header .ddd {
+    width: 190px;
+    position: absolute;
+    left: 100px;
+  }
+  .header .cover {
+    right: 40px;
+    margin-top: 24px;
+  }
+  .header ul {
+    display: flex;
+    align-items: flex-end;
+  }.sec01 {
+    height: 470px;
+  }
+
+  .sec03 h2 {
+    padding-top: 60px;
+  }
+  .sec03 .btn {
+    margin-top: 360px;
+  }
+  .sec04 h2 {
+    padding-top: 40px;
+  } 
+  .sec04 .inner {
+    margin-bottom: 130px;
+  }
+  .sec06 .inner {
+    margin-top: 30px;
+  }
+  .sp_only {
+    display: none;
+  }
+}
+@media (max-width: 889px) { 
+  .header .ddd {
+    left: 50px;
+  }
+}
+@media (max-width: 842px) { 
+  .header .ddd {
+    left: 35px;
+    width: 160px;
+  }
+}
+@media (max-width: 768px) {
+  .header p {
+    position: relative;
+    left: 60px;
+    font-size: 60px; 
+  }
+  .header .cover {
+    position: absolute;
+    display: block;
+    right: 30px;
+    width: 320px;
+    line-height: 4rem;
+  }
+  .header ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .header li .li_sp {
+    margin-left: 10px;
+  }
+  .header li + li {
+    margin-left: 15px;
+  }
+  .sec01 {
+     height: 270px;
+  }
+  .sec03 h2 {
+    padding-top: 90px;
+  }
+  .sec03 .btn {
+    margin: 310px 0 60px 0;
+    width: 40%;
+    padding: 12px 21px;
+  }
+  .sec03 .btn + .btn {
+    margin-left: 30px;
+  }
+  .sec04 h2 {
+    padding-top: 30px;
+  }
+  .sp_only {
+    display: none;
+  }
+}
+@media (max-width: 589px) {
+  .sec03 .btn {
+    width: 60%;
+    margin: 220px 0 0 0;
+    padding: 16px 28px;
+    line-height: 2.0rem;
+  }
+  .sec03 .btn_tw {
+    margin-top: 20px;
+  }
+  .sec03 .btn + .btn {
+    margin-left: 0;
+  }
+}
+@media (max-width: 540px) {
+  .header .ddd {
+    width: 100px;
+    position: absolute;
+    left: 35%;
+    top: 50px;
+  }
+  .header p {
+    position:absolute;
+    top: 20px;
+  }
+  .header .cover {
+    right: 20%;
+  }
+  .header ul li {
+    font-size: 14px;
+    line-height: 3rem;
+  }
+  .header ul .li_sp {
+    padding-left: 20px;
+  }
+  .header ul li + li {
+    margin-left: 30px;
+  }
+  .header .cover {
+    padding-top: 30px;
+  }
+}
+@media (max-width: 414px) {
+  .header .ddd {
+    left: 157px;
+  }
+  .header .cover {
+    right: 15%;
+  }
+}
+  @media (max-width: 375px) {
+    .header .ddd {
+      width: 100px;
+      position: absolute;
+      left: 138px;
+      top: 50px;
+    }
+    .header p {
+      position:absolute;
+      top: 20px;
+    }
+    .header .cover {
+      right: 40px;
+    }
+    .header ul li {
+      font-size: 14px;
+      line-height: 3rem;
+    }
+    .header ul .li_sp {
+      padding-left: 20px;
+    }
+    .header ul li + li {
+      margin-left: 30px;
+    }
+    .header .cover {
+      padding-top: 30px;
+    }
+    .sec01 {
+      background: url("https://github.com/tomoki-yuzuman/yuzuman1307/blob/main/IMG_2569.JPG?raw=true");
+      background-size: 400px;
+      background-repeat:no-repeat ;
+    }
+    .sec01 ul {
+      display: none;
+    }
+    .sec02 {
+      padding-bottom: 40px;
+    }
+    .sec02 h2 {
+      padding-top: 0;
+    }
+    .sec02 p {
+      letter-spacing: normal;
+      font-size: 14px;
+      line-height: 3rem;
+      padding: 0 2%;
+    }
+    .sec03 {
+      height: 700px;
+      background: url("https://github.com/tomoki-yuzuman/yuzuman1307/blob/main/IMG_2562.JPG?raw=true");
+      background-size: 400px;
+    background-repeat: no-repeat;
+    }
+    .sec03 h2 {
+      padding-top: 60px;
+      color: #d64e25;
+    }
+    .sec03 .btn {
+      width: 60%;
+      margin: 220px 0 0 0;
+      padding: 16px 28px;
+      line-height: 2.0rem;
+    }
+    .sec03 .btn_tw {
+      margin-top: 20px;
+    }
+    .sec03 .btn + .btn {
+      margin-left: 0;
+    }
+    .sec04 .inner {
+      width: 80%;
+    }
+    .sec04 p span {
+      padding: 0 210px 0 0;
+      margin: 0 auto;
+    }
+    .sec04 p {
+      font-size: 18px;
+      letter-spacing: normal;
+      line-height: 2rem;
+      padding: 28px 0;
+    }
+    .sec05 {
+      height:350px;
+    }
+    .sec05 .container .ex p {
+      font-size: 14px;
+      line-height: 5rem;
+      padding: 20% 2%;
+      margin-bottom: 0;
+    }
+    .sec06 p span {
+      margin-right: 0;
+    }
+    .sec06 .container .ex + .ex {
+      margin-left: 0;
+    }
+    .sec06 .container .ex .a2 {
+      position: absolute;
+      left: calc(50% - 32px);
+    }
+  }
+  @media (max-width: 320px) {
+    .header .ddd {
+      left: 110px;
+    }
+    .header .cover {
+      right: 20px;
+    }
+    .sec04 p span {
+      padding: 0 130px 0 0;
+    }
+    .sec05 h2 {
+      font-size: 27px;
+    }
+    .sec06 .container .ex p {
+      font-size: 22px;
+    }
+  }
